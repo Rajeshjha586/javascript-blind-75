@@ -9,7 +9,6 @@ function arrayProductExcludingCurrent(numbers) {
   }
 
   // Find the suffix products in place and multiply them with the prefix products
-
   for (let i = numbers.length - 1; i >= 0; i--) {
     result[i] *= product;
     product *= numbers[i];
