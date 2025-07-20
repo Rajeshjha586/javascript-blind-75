@@ -3,7 +3,7 @@
  * @param {TreeNode | null} b
  * @return {boolean}
  */
-export default function binaryTreeEqual(a, b) {
+function binaryTreeEqual(a, b) {
   if (a === null || b === null) {
     return a === b;
   }
