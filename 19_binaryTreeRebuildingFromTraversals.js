@@ -11,7 +11,7 @@ class TreeNode {
   }
 }
 
-export default function binaryTreeRebuildingFromTraversals(preorder, inorder) {
+function binaryTreeRebuildingFromTraversals(preorder, inorder) {
   function buildSubtree(preorderStart, preorderEnd, inorderStart, inorderEnd) {
     if (preorderStart > preorderEnd || inorderStart > inorderEnd) {
       return null;

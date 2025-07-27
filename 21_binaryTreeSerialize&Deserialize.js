@@ -2,7 +2,7 @@
  * @param {TreeNode | null} root
  * @return {string}
  */
-export function serializeBinaryTree(root) {
+function serializeBinaryTree(root) {
   if (!root) {
     return "";
   }
@@ -38,7 +38,7 @@ class TreeNode {
   }
 }
 
-export function deserializeBinaryTree(data) {
+function deserializeBinaryTree(data) {
   if (data === "#") return null;
   const arr = data.split(",");
   let root = new TreeNode(parseInt(arr[0]));

@@ -2,7 +2,7 @@
  * @param {TreeNode | null} root
  * @return {number}
  */
-export default function binaryTreeMaximumPathSum(root) {
+function binaryTreeMaximumPathSum(root) {
   let globalMaxPathSum = -Infinity;
 
   function computeMaxGainFromNode(node) {
